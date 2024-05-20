@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      body {
+          background-image: url(blue-soft-watercolor-abstract-texture_3590-121.avif);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+
+      }
+      .all{
+        gap: 10px;
+          padding-left: 5%;
+          display: grid;
+          align-content: center;    
+                  
+      }
+      .position {
+          display: flex;
+          padding: 20px;
+          flex-direction: row;
+          gap: 15px;
+          justify-content: center;
+          align-items: flex-start;
+      }
+      .full{
+        box-shadow: 20px 10px 20px #888888;
+        border: thin 2px;
+        border-radius: 10%;
+        width: 950px;
+        height: 200px;
+        margin-left: 150px;
+        position: relative;
+        text-align: center;
+        /* padding: 20px; */
+        background-color: white;
+      }
+      .full:hover{
+          transform:scale(1.1,1.1);
+          transition-duration: 1s;
+          background-image: url(watercolor.jpg);
+        }
+      .img{
+        padding-top: 20px;
+          width: 20%;
+          height: 80%;
+          float: left;
+
+      }
+      .about{
+        box-shadow: 20px 10px 20px #888888;
+        border: thin 2px;
+        border-radius: 10%;
+        width:250px;
+        height: 560px;
+        /* margin-left: 10px; */
+        display:end;
+        position:relative;
+        text-align: center;
+        padding-right:5px ;
+        background-color: white;
+      }
+      .about:hover{
+          transform: translate(0px,-15px);
+          transition-duration: 1s;
+          background-image: url(watercolor.jpg);
+      }
+      .contact{
+        box-shadow: 20px 10px 20px #888888;
+        border: thin 2px;
+        display: flex;
+        grid-column-start: 2;
+        border-radius: 10%;
+        width:250px;
+        height: 560px;
+        display: end;
+        position: relative;
+        text-align: center;
+        padding-right: 5px;
+        background-color: white;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+
+      }
+      .contact:hover{
+          transform: translate(0px,-15px);
+          transition-duration: 1s;
+          background-image: url(watercolor.jpg);
+      }
+      .project{
+        box-shadow: 20px 10px 20px #888888;
+        border: thin 2px;
+        border-radius: 10%;
+        width:250px;
+        height: 560px;
+        position: relative;
+        text-align: center;
+        padding: 10px;
+        background-color: white;
+      }
+      .project:hover{
+          transform: translate(0px,-15px);
+          transition-duration: 1s;
+          background-image: url(watercolor.jpg);
+      }
+      .imgpro{
+          width: 40%;
+          height: 15%;
+      }
+      .skills {
+        margin-left: 150px;
+        
+        box-shadow: 20px 10px 20px #888888;
+        border: thin 2px;
+        gap: 50px;
+        display: inline-flex;
+        flex-direction: row;
+        border-radius: 10%;
+        width: 950px;
+        height: 200px;
+        /* margin-left: 10px; */
+        position: relative;
+        text-align: center;
+        background-color: white;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .skills:hover{
+          transform:scale(1.1,1.1);
+          transition-duration: 1s;
+          background-image: url(watercolor.jpg);
+      }
+      footer {
+          justify-content: space-around;
+          gap: 10px;
+          display: inline-flex;
+          position: relative;
+          bottom: 0px;
+          width: 100%;
+          text-align: center;
+          background-color: black;
+          color: white;
+          padding: 5px 0;
+          flex-direction: row;
+          align-items: center;
+      }
+      .iframe{
+          align-items: flex-end;
+
+      }
+@media only screen and (max-width: 425px) {
+    .all {
+        padding-left: 5%;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+    .navbar-nav .dropdown-menu {
+    width: 50%;
+    position: static;
+}
+    .full {
+      box-shadow: 20px 10px 20px #888888;
+      border: thin 2px;
+      width: 370px;
+      height: 250px;
+      margin-left: 0px;
+      position: relative;
+      text-align: center;
+      /* padding: 20px; */
+      background-color: white;
+    }
+    .img {
+        width: 30%;
+        height: 40%;
+        float: none;
+    }
+    .position {
+        display: inline-flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+    .skills {
+      margin: auto;
+        gap: 30px;
+        display: inline-flex;
+        flex-direction: column;
+        box-shadow: 20px 10px 20px #888888;
+        border: thin 2px;
+        width: 280px;
+        height: 600px;
+        position: relative;
+        text-align: center;
+        background-color: white;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+footer {
+    justify-content: space-around;
+    gap: 10px;
+    display: inline-flex;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    flex-direction: column;
+    align-items: center;
+}
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white " id="home" style="border:solid rgb(199, 182, 182) .5px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="hadeel.jpg" alt="" width="200%" height="65px" style="padding-left: 0px;" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="padding-left: 25%;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Contact">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#About">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Project">My Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="hadeel CV.pdf" target="_blank">My CV</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle active" href="#Contact" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              Contact links
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hadeelzoubi12@gmail.com" target="_blank">
+                <img src="gemail.webp" alt="" width="20%" height="20%"> Email
+                </a>
+              </li><br>
+              <li>
+                <a class="dropdown-item" href="https://github.com/Hadeel-Alzoubi" target="_blank">
+                <img src="GitHub-logo.png" alt="" width="20%" height="20%"> GitHub
+                </a>
+              </li><br>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/hadeel-al-zoubi-b70584210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <img src="LinkedIn_Logo.svg.png" alt="" width="25%" height="10%"> LinkedIn
+                </a></li><br>
+              <!-- <li ><img src="phone.png" alt="" width="15%" height="10%" style="padding-left: 5px;"><br> +962 780318971</li> -->
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <br>
+      <br>
+
+    <div class="all" >
+
+        <div class="full">
+          <img class="img" src="prog.avif" alt="" >
+          <br>
+          <h3 style="font-family:fantasy;  ">
+            Full Stack Developer</h3>
+          <br>
+          <p style="font-size: larger;font-family: Arial, Helvetica, sans-serif;">
+            To secure a challenging position in a reputable organization to expand my learning, knowledge, and skills.
+          </p>
+       </div>
+      <div class="position" >
+       <div class="about" id="About">
+        <br>
+        <img src="aboutm.png" alt="" width="70%" height="90px">
+        <!-- <h3>About Me</h3> -->
+        <br><br>
+         <p style="font-size: larger;font-family: Arial, Helvetica, sans-serif;">
+          Welcome To My PortFolio : <br>
+          I am Hadeel AL_Zoubi <br>i graduated in 2019 with a degree in Computer Information System,
+          with a good grade.I have Experience working in customer service,
+          but i have developed a passion for web Development. 
+          I look forward to working with you soon. 
+          You can contact me through the communication option available on the page. 
+         </p>
+      </div>
+      
+      <div class="project" id="Project">        
+        <h3 style="display: inline-block;">SEMSARKOM Project</h3>
+        <br>
+        <!-- <fieldset> -->
+          <img class="imgpro" src="semsarkom1.jpeg" alt="">
+          <p style="font-size: larger;font-family: Arial, Helvetica, sans-serif;">                          
+            It is a website to facilitate the advertisement process through the Realtors or search for real estate and Information about It through the Customers that is displayed through the map.
+            REGISTRATION SYSTEM
+            It is a miniature registration system for the university system that allows students to register and withdraw courses.
+          </p>
+        <!-- </fieldset> -->
+      </div>    
+       <div class="contact" id="Contact">
+        <br>
+        <img src="contact-me.jpg" alt="" width="200px" height="90px">
+        <!-- <h3>Contact Me</h3> -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hadeelzoubi12@gmail.com" target="_blank">
+          <br>
+          <img class="imagecontact" src="gemail.webp" alt="" width="25%" height="25%"><br>
+           hadeelzoubi12@gmail.com
+        </a>
+        
+        <a href="https://www.linkedin.com/in/hadeel-al-zoubi-b70584210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"  target="_blank">
+          <br>
+          <img class="imagecontact" src="LinkedIn_Logo.svg.png" alt="" width="40%" height="40%"> <br>
+           Hadeel Al_zoubi
+        </a>
+        
+        <a href="https://github.com/Hadeel-Alzoubi" target="_blank">
+          <br>
+          <img class="imagecontact" src="GitHub-logo.png" alt="" width="40%" height="40%"><br>
+           Hadeel-Alzoubi
+        </a>
+        
+        <img class="imagecontact" src="phone.png" alt=""  width="20%" height="20%">
+         : +962 780318971 
+       </div>
+      </div>
+      <!-- <div class="skil"> -->
+       <div class="skills">
+        <img src="skill.webp" alt="" width="150px" height="150px">
+        
+           <span style="font-size: larger;font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            Technical Skills :
+            <br>
+            <ul>
+              <li>
+                Microsoft Office
+              </li>
+              <li>
+                Problem Solving
+              </li>
+              <li>
+                Good Researcher
+              </li>
+              <li>
+                Creat DataBase 
+              </li>
+            </ul>
+           </span>
+           <span style="font-size: larger;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">
+            Soft Skills :
+              <br>
+            <ul>
+              <li>
+                Ecellent Communication
+              </li>
+              <li>
+                TeamWork and Collaboration
+              </li>
+              <li>
+                Active Listening
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    <br>
+      <footer>
+        <a href="#home">
+          <img src="hadeel.jpg" alt="Logo" width="150px" height="80px" style="padding: 10px;">
+        </a>
+          <p>
+            To secure a challenging position in <br>
+            a reputable organization to expand my learning,<br>
+            knowledge, and skills.
+          </p>
+       
+        <div class="footercontact">
+          <h4>contact me</h4>
+          <ul>
+            <li>
+              Email : hadeelzoubi12@gmail.com
+            </li>
+            <li>
+              LinkedIn : Hadeel Al_zoubi
+            </li>
+            <li>
+              GitHub : Hadeel-Alzoubi
+            </li>
+            <li>
+              Phone Number : +962 780318971
+            </li>
+          </ul>
+        </div>
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.009728827796!2d35.849668799999996!3d32.5525856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sen!2sjo!4v1716021521669!5m2!1sen!2sjo"
+         width="300px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
